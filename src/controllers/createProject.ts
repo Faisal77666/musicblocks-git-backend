@@ -4,6 +4,7 @@ import { createMetaData, generateKey, hashKey } from '../utils/hash';
 import { getRepoName } from '../utils/getRepoName';
 
 export const handleCreateProject = async (req: Request, res: Response) => {
+    console.log("handling create project");
     let { repoName, theme, description } = req.body;
     const { projectData } = req.body;
     

@@ -10,6 +10,7 @@ import { handleGetCommits } from '../controllers/getCommits';
 import { handleGetProjectDataWithCommit } from '../controllers/getProjectDataWithCommit';
 import { handleGetProjectData } from '../controllers/getProjectData';
 import { handleGetProjects } from '../controllers/getProjects';
+import { handleCreateBranch } from '../controllers/createBranch';
 
 const projectRouter = express.Router();
 
@@ -23,4 +24,5 @@ projectRouter.get("/commitHistory",handleGetCommits);
 projectRouter.get("/getProjectDataAtCommit",handleGetProjectDataWithCommit);
 projectRouter.get("/getProjectData",handleGetProjectData);
 projectRouter.get("/allRepos",handleGetProjects);
+projectRouter.post('/createBranch', handleCreateBranch);
 export default projectRouter;

@@ -1,6 +1,6 @@
 openapi: 3.0.3
 info:
-  title: Project Service API
+  title: Git Backend for Musicblocks
   version: 1.0.0
   description: API documentation for the Musicblocks project backend.
 
